@@ -43,8 +43,6 @@ body {
 }
 .sidebar h2 {
   font-size: 18px;
-  /* margin-bottom: 20px; */
-  /* font-weight: 400; */
 }
 .end-list{
   margin-bottom: 20px;
@@ -57,7 +55,6 @@ body {
   gap: 4px;
 }
 .sidebar nav ul li {
-  /* margin-bottom: 10px; */
   display: flex;
 }
 .sidebar nav ul li img {
@@ -113,7 +110,6 @@ body {
   z-index: 1;
 }
 .tab-link.active {
-  /* border-bottom: 2px solid #333; */
   font-weight: bold;
   color: #333;
   font-weight: 300;
@@ -121,7 +117,6 @@ body {
   border-radius: 4px;
 }
 .divider {
-  /* border: none; */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -130,119 +125,11 @@ body {
   background: grey;
   z-index: 0;
 }
-/*
-.tab-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: black;
-  z-index: 2;
-} */
 .tab-link:hover {
   background-color: lightgrey;
   border-radius:4px;
 }
 
-/* #tabContent {
-  padding: 20px;
-  border-radius: 4px;
-}
-
-#tabContent table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-#tabContent th, #tabContent td {
-  padding: 10px;
-  border: 1px solid gray;
-}
-
-#tabContent th {
-  border-top: none;
-  color: #333;
-}
-
-#tabContent th:first-child,
-#tabContent td:first-child {
-  border-left: none;
-  color: #333;
-}
-
-#tabContent th:last-child,
-#tabContent td:last-child {
-  border-right: none;
-  color: #333;
-}
-
-#tabContent td {
-  border-bottom: 1px solid gray;
-  color: #333;
-}
-
-#tabContent tr:last-child td {
-  border-bottom: none;
-}
-
-#spinner.hidden {
-  display: none;
-}
-
-#spinner {
-  text-align: center;
-  font-size: 18px;
-  color: #333;
-}
-.first-row {
-  background-color: lightgrey;
-}
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-}
-
-.modal {
-  background: #fff;
-  padding: 20px;
-  width: 90%;
-  max-width: 600px;
-  border-radius: 8px;
-  overflow: auto;
-  max-height: 80vh;
-  position: relative;
-}
-
-.modal-content {
-  margin-top: 20px;
-  max-height: 50vh;
-  overflow-y: auto;
-}
-
-.hidden {
-  display: none;
-}
-
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-} */
-/* Existing styling for tables in the dashboard */
 #tabContent {
   padding: 20px;
   border-radius: 4px;
@@ -314,7 +201,7 @@ body {
   background: #fff;
   padding: 20px 0px 20px 0px;
   width: 90%;
-  max-width: 100%; /* Increase the max-width */
+  max-width: 100%; 
   border-radius: 8px;
   overflow: auto;
   max-height: 100vh;
@@ -323,7 +210,7 @@ body {
 
 .modal-content {
   margin-top: 20px;
-  max-height: 60vh; /* Adjust this to fit the new modal size */
+  max-height: 60vh; 
   overflow-y: auto;
 }
 
@@ -342,7 +229,6 @@ body {
   color: gray;
 }
 
-/* New styling for modal table */
 .modal h2{
   font-weight: 200;
 }
@@ -351,7 +237,6 @@ body {
   border-collapse: collapse;
   margin-right: 10px;
   margin-left: 20px;
-   /* table-layout: fixed; */
 }
 
 .modal-table th, .modal-table td {

@@ -148,10 +148,4 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeModalFunction();
 });
  
-// // Optional function to load sidebar-specific content
-// function loadContentFromSidebar(section) {
-//   tabContent.innerHTML = `<p>Loaded content for ${section}</p>`;
-// }
- 
-// Initial load for the first tab
 loadContent(1);
