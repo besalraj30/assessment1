@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard with Tabs and Sidebar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar">
+        <div class="sidebar-title">
+        <h2>Random </h2>
+        <h2 class="title-secondary">Corp</h2>
+        </div>
+     <nav class="nav-sidebar">
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                <a href="#" class="active">
+                    <img src="profile.jpg" alt="profile pic">
+                    <span>Section 1</span>
+                </a>
+                </li>
+                <li><a href="#"><img src="#" alt=""><span>Section 2</span></a></li>
+                <li><a href="#"><img src="#" alt=""><span>Section 3</span></a></li>
+                <li><a href="#"><img src="#" alt=""><span>Section 4</span></a></li>
+                <li><a href="#"><img src="#" alt=""><span>Section 2</span></a></li>
+                <li><a href="#"><img src="#" alt=""><span>Section 3</span></a></li>
+                <li><a href="#"><img src="#" alt=""><span>Section 4</span></a></li>
+            </ul>
+         </div>
+    </nav>
+    </div>
+ 
+ 
+    <div class="main-content">
+        <h2>Section Name</h2>
+        <div class="tabs">
+             <div class="tab-buttons">
+                <button class="tab-link active" data-tab="1">Tab one</button>
+                <button class="tab-link" data-tab="2">Tab two</button>
+                <button class="tab-link" data-tab="3">Tab three</button>
+                <button class="tab-link" data-tab="4">Tab four</button>
+                  <button class="tab-link" data-tab="5">Tab five</button>
+             </div>
+             <hr style="width:100%;text-align:left;margin-left:0;margin-top:10px;color:lightgray">
+ 
+             <!-- <div class="divider"></div> -->
+        </div>
+ 
+ 
+        <div id="tabContent">
+          <!-- Content will be loaded here -->
+        </div>
+ 
+        <div id="spinner" class="hidden">Loading...</div>
+      </div>
+    </div>
+ 
+    <div id="modalOverlay" class="modal-overlay hidden">
+        <div class="modal">
+            <h2 id="modalTitle">Modal Title</h2>
+            <hr style="width:100%;text-align:left;margin-left:0;margin-top:10px;color:lightgray">
+            <div id="modalContent" class="modal-content">
+                <!-- Content will be dynamically loaded here -->
+            </div>
+            <button id="closeModal" class="close-button">x</button>
+        </div>
+    </div>
+ 
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  width: 100%;
+}
+.nav-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.sidebar {
+  width: 15%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  height: 100vh;
+}
+.sidebar-title{
+  display: flex;
+  margin-right: 1%;
+  margin-bottom: 20px;
+}
+.title-secondary{
+  margin-left: 3%;
+  color: gray;
+  font-weight: 200;
+}
+.sidebar h2 {
+  font-size: 18px;
+  /* margin-bottom: 20px; */
+  /* font-weight: 400; */
+}
+.end-list{
+  margin-bottom: 20px;
+}
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sidebar nav ul li {
+  /* margin-bottom: 10px; */
+  display: flex;
+}
+.sidebar nav ul li img {
+  height: 25px;
+  margin-right: 10px;
+}
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: grey;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  width: 100%;
+}
+.sidebar nav ul li a span {
+  flex-grow: 1;
+}
+.sidebar nav ul li a.active,
+.sidebar nav ul li a:hover {
+  background-color: lightgrey;
+  color: #333;
+}
+
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.tab-buttons{
+  display: flex;
+  gap:4px;
+  position: relative;
+}
+.tab-link {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: gray;
+  font-weight: 200;
+  padding: 5px 15px;
+  z-index: 1;
+}
+.tab-link.active {
+  /* border-bottom: 2px solid #333; */
+  font-weight: bold;
+  color: #333;
+  font-weight: 300;
+  background-color: lightgrey;
+  border-radius: 4px;
+}
+.divider {
+  /* border: none; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: grey;
+  z-index: 0;
+}
+/*
+.tab-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+  z-index: 2;
+} */
+.tab-link:hover {
+  background-color: lightgrey;
+  border-radius:4px;
+}
+
+/* #tabContent {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#tabContent table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tabContent th, #tabContent td {
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+#tabContent th {
+  border-top: none;
+  color: #333;
+}
+
+#tabContent th:first-child,
+#tabContent td:first-child {
+  border-left: none;
+  color: #333;
+}
+
+#tabContent th:last-child,
+#tabContent td:last-child {
+  border-right: none;
+  color: #333;
+}
+
+#tabContent td {
+  border-bottom: 1px solid gray;
+  color: #333;
+}
+
+#tabContent tr:last-child td {
+  border-bottom: none;
+}
+
+#spinner.hidden {
+  display: none;
+}
+
+#spinner {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+.first-row {
+  background-color: lightgrey;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 8px;
+  overflow: auto;
+  max-height: 80vh;
+  position: relative;
+}
+
+.modal-content {
+  margin-top: 20px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+} */
+/* Existing styling for tables in the dashboard */
+#tabContent {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#tabContent table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tabContent th, #tabContent td {
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+#tabContent th {
+  border-top: none;
+  color: #333;
+}
+
+#tabContent th:first-child, #tabContent td:first-child {
+  border-left: none;
+  color: #333;
+}
+
+#tabContent th:last-child, #tabContent td:last-child {
+  border-right: none;
+  color: #333;
+}
+
+#tabContent td {
+  border-bottom: 1px solid gray;
+  color: #333;
+}
+
+#tabContent tr:last-child td {
+  border-bottom: none;
+}
+
+#spinner.hidden {
+  display: none;
+}
+
+#spinner {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.first-row {
+  background-color: lightgrey;
+}
+
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px 0px 20px 0px;
+  width: 90%;
+  max-width: 100%; /* Increase the max-width */
+  border-radius: 8px;
+  overflow: auto;
+  max-height: 100vh;
+  position: relative;
+}
+
+.modal-content {
+  margin-top: 20px;
+  max-height: 60vh; /* Adjust this to fit the new modal size */
+  overflow-y: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: gray;
+}
+
+/* New styling for modal table */
+.modal h2{
+  font-weight: 200;
+}
+.modal-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-right: 10px;
+  margin-left: 20px;
+   /* table-layout: fixed; */
+}
+
+.modal-table th, .modal-table td {
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.modal-table th {
+  border-top: none;
+  color: #333;
+}
+
+.modal-table th:first-child, .modal-table td:first-child {
+  border-left: none;
+  color: #333;
+}
+
+.modal-table th:last-child, .modal-table td:last-child {
+  border-right: none;
+  color: #333;
+}
+
+.modal-table td {
+  border-bottom: 1px solid gray;
+  color: #333;
+}
+
+.modal-table tr:last-child td {
+  border-bottom: none;
+}
